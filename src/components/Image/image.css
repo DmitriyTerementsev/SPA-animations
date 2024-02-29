@@ -1,0 +1,16 @@
+.image {
+  width: 300px;
+  height: 300px;
+  position: static;
+  position: absolute;
+  right: 65px;
+  top: 75px;
+}
+
+.selected {
+  outline: 4px dashed #3e87f8;
+}
+
+.image:hover {
+  cursor: pointer;
+}

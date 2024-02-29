@@ -1,0 +1,68 @@
+.option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #444444;
+}
+
+.option__text {
+  width: 46px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+.option__value {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 28px;
+}
+
+input[type='range'].option__input {
+  height: 2px;
+  -webkit-appearance: none;
+}
+
+input[type='range'].option__input.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 13px + var(--ratio) * (100% - 13px));
+}
+
+input[type='range'].option__input:focus {
+  outline: none;
+}
+
+input[type='range'].option__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #afafaf;
+  margin-top: calc(2px * 0.5 - 13px * 0.5);
+}
+
+input[type='range'].option__input::-webkit-slider-runnable-track {
+  height: 2px;
+  border: none;
+  border-radius: 0.5em;
+  background: #efefef;
+  box-shadow: none;
+}
+
+input[type='range'].option__input.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#afafaf, #afafaf) 0 / var(--sx) 100% no-repeat,
+    #efefef;
+}
+
+input[type='range'].option__input.slider-progress:active::-webkit-slider-runnable-track {
+  background: linear-gradient(#afafaf, #afafaf) 0 / var() 100% no-repeat,
+    #efefef;
+}

@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  width: 374px;
+}
+
+.title {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #222222;
+  position: absolute;
+  margin: 0;
+  top: 20px;
+  left: 0px;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #222222;
+  position: absolute;
+  margin: 0;
+  top: 90px;
+  left: 0px;
+}
+
+.button {
+  appearance: none;
+  border: 0;
+  color: #ffffff;
+  width: 146px;
+  height: 51px;
+  background-color: #3e87f8;
+  border-radius: 5px;
+  position: absolute;
+  top: 265px;
+  left: 0px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.description:hover {
+  cursor: pointer;
+}
+
+.title:hover {
+  cursor: pointer;
+}

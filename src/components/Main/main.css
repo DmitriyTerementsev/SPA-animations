@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.select {
+  outline: 4px dashed #3e87f8;
+}
+
+.non-preview {
+  opacity: 0;
+  transition: 0.5s;
+}
